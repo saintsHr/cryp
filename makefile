@@ -1,2 +1,2 @@
 all:
-	gcc src/*.c -Iinclude -o cryp
+	gcc src/*.c -Iinclude -o bin/cryp
