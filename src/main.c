@@ -73,8 +73,7 @@ int main(int argc, char *argv[]){
 
     // creates output file
     char outputName[256];
-    generateOutputName(path, outputName, sizeof(outputName));
-    FILE *output = fopen(outputName, "wb");
+    FILE *output = fopen(path, "wb");
 
     // decrypts if user gives an valid key
     if (argc == 3 && memcmp(sKey, argv[2], 10) == 0){
